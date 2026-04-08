@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Buttons Quiz</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-light">
+    <main class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <div class="card shadow-sm quiz-card">
+            <div class="card-header bg-white">
+              <h1 class="h5 mb-0">Simple Movie Quiz</h1>
+            </div>
+            <div class="card-body">
+              <p class="mb-2 fw-bold">1. Who directed <em>Inception</em>?</p>
+              <div class="btn-group w-100 mb-3" role="group" aria-label="Director choices">
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="q1_director"
+                  id="q1_nolan"
+                  autocomplete="off"
+                  value="nolan"
+                />
+                <label class="btn btn-outline-primary" for="q1_nolan">Christopher Nolan</label>
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="q1_director"
+                  id="q1_cameron"
+                  autocomplete="off"
+                  value="cameron"
+                />
+                <label class="btn btn-outline-primary" for="q1_cameron">James Cameron</label>
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="q1_director"
+                  id="q1_spielberg"
+                  autocomplete="off"
+                  value="spielberg"
+                />
+                <label class="btn btn-outline-primary" for="q1_spielberg">Steven Spielberg</label>
+              </div>
+
+              <p class="mb-2 fw-bold">2. Pick the two songs from the Guardians of the Galaxy Vol. 1 soundtrack.</p>
+              <div class="btn-group w-100 mb-3" role="group" aria-label="Soundtrack choices">
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="q2_hooked"
+                  autocomplete="off"
+                  value="hooked"
+                  name="q2_songs"
+                />
+                <label class="btn btn-outline-success" for="q2_hooked">Hooked on a Feeling</label>
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="q2_come"
+                  autocomplete="off"
+                  value="come"
+                  name="q2_songs"
+                />
+                <label class="btn btn-outline-success" for="q2_come">Come and Get Your Love</label>
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="q2_smells"
+                  autocomplete="off"
+                  value="smells"
+                  name="q2_songs"
+                />
+                <label class="btn btn-outline-success" for="q2_smells">Smells Like Teen Spirit</label>
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="q2_world"
+                  autocomplete="off"
+                  value="world"
+                  name="q2_songs"
+                />
+                <label class="btn btn-outline-success" for="q2_world">Everybody Wants to Rule the World</label>
+              </div>
+
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <button type="button" class="btn btn-primary" id="submitBtn">
+                  Check Answers
+                </button>
+                <button type="button" class="btn btn-outline-secondary" id="resetBtn">
+                  Reset
+                </button>
+              </div>
+
+              <div id="resultWrap" class="d-none">
+                <div class="alert alert-secondary mb-0" role="alert">
+                  <strong>Result:</strong>
+                  <span id="resultText"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
+

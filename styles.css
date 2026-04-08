@@ -1,0 +1,15 @@
+
+.quiz-card {
+  min-height: 340px;
+}
+
+.option-help {
+  font-size: 0.9rem;
+}
+
+
+.btn-check + .btn {
+  white-space: normal;
+  text-align: left;
+}
+
